@@ -1,1 +1,530 @@
-
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DivvyGo Privacy Policy - 智能分帳 App 隱私權政策">
+    <title>DivvyGo Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8eef5 100%);
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+        h1 {
+            color: #10B981;
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            text-align: center;
+            font-weight: 700;
+        }
+        h2 {
+            color: #10B981;
+            font-size: 1.6em;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #10B981;
+            padding-bottom: 10px;
+            font-weight: 600;
+        }
+        h3 {
+            color: #059669;
+            font-size: 1.25em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+        ul,
+        ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+        .updated {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 40px;
+            font-size: 0.95em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        th,
+        td {
+            border: 1px solid #e5e7eb;
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #10B981;
+            color: white;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        .highlight {
+            background: linear-gradient(135deg, #D1FAE5 0%, #A7F3D0 100%);
+            padding: 20px 25px;
+            border-left: 5px solid #10B981;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+        .language-toggle {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .language-toggle button {
+            background: #10B981;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            margin: 0 8px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.05em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+        }
+        .language-toggle button:hover {
+            background: #059669;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+        }
+        .language-toggle button.active {
+            background: #047857;
+        }
+        .privacy-section {
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+        .privacy-section.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #e5e7eb;
+            margin: 40px 0;
+        }
+        strong {
+            color: #047857;
+        }
+        a {
+            color: #10B981;
+            text-decoration: none;
+            border-bottom: 1px dotted #10B981;
+        }
+        a:hover {
+            color: #047857;
+            border-bottom: 1px solid #047857;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2.2em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .language-toggle button {
+                padding: 10px 20px;
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DivvyGo</h1>
+        <p class="updated">Privacy Policy · 隱私權政策<br>Last Updated: January 13, 2026</p>
+        <div class="language-toggle">
+            <button onclick="switchLanguage('zh')" id="btn-zh" class="active">繁體中文</button>
+            <button onclick="switchLanguage('en')" id="btn-en">English</button>
+        </div>
+        <div id="privacy-zh" class="privacy-section active">
+            <h2>1. 簡介</h2>
+            <p>歡迎使用 <strong>DivvyGo</strong>！</p>
+            <p>DivvyGo（以下簡稱「本應用程式」）致力於保護您的隱私。本隱私權政策說明我們如何收集、使用、儲存及保護您的個人資訊。</p>
+            <p>使用本應用程式即表示您同意本政策所述的資訊處理方式。</p>
+            <hr>
+            <h2>2. 我們收集的資訊</h2>
+            <h3>2.1 您主動提供的資訊</h3>
+            <ul>
+                <li><strong>Google 帳號資訊</strong>：當您使用 Google 登入時，我們會收集您的姓名、電子郵件地址及個人資料相片。</li>
+                <li><strong>房間與費用資料</strong>：您建立的房間名稱、成員名稱、費用項目、金額、分帳設定等。</li>
+            </ul>
+            <h3>2.2 自動收集的資訊</h3>
+            <ul>
+                <li><strong>裝置資訊</strong>：作業系統版本、裝置型號（用於錯誤追蹤）。</li>
+                <li><strong>使用數據</strong>：應用程式崩潰報告及效能數據（透過 Firebase Crashlytics）。</li>
+            </ul>
+            <h3>2.3 我們不收集的資訊</h3>
+            <ul>
+                <li>❌ 您的位置資訊</li>
+                <li>❌ 您的聯絡人清單</li>
+                <li>❌ 您的照片或檔案</li>
+                <li>❌ 您的裝置識別碼用於追蹤</li>
+            </ul>
+            <hr>
+            <h2>3. 資訊使用方式</h2>
+            <p>我們使用收集的資訊用於：</p>
+            <ul>
+                <li>✅ 提供分帳與結算功能</li>
+                <li>✅ 在多裝置間同步您的資料</li>
+                <li>✅ 改善應用程式效能與穩定性</li>
+                <li>✅ 提供客戶支援</li>
+                <li>✅ 顯示您的個人資料（姓名、照片）於房間成員列表</li>
+            </ul>
+            <div class="highlight">
+                <strong>我們絕不會</strong>：
+                <ul style="margin-top: 10px;">
+                    <li>❌ 將您的資料出售給第三方</li>
+                    <li>❌ 將您的資料用於廣告目的</li>
+                    <li>❌ 與其他用戶分享您的私人房間資訊</li>
+                </ul>
+            </div>
+            <hr>
+            <h2>4. 資料儲存與安全</h2>
+            <h3>4.1 資料儲存位置</h3>
+            <p>您的資料儲存於 <strong>Google Firebase Firestore</strong> 雲端資料庫，伺服器位於：</p>
+            <ul>
+                <li>主要地區：美國（us-central1）</li>
+                <li>資料採用加密傳輸（HTTPS）及靜態加密</li>
+            </ul>
+            <h3>4.2 安全措施</h3>
+            <ul>
+                <li>🔒 所有資料傳輸均使用 SSL/TLS 加密</li>
+                <li>🔐 僅有您及您邀請的房間成員可存取房間資料</li>
+                <li>🛡️ Firebase Security Rules 確保資料存取權限控管</li>
+            </ul>
+            <h3>4.3 資料保留期限</h3>
+            <ul>
+                <li><strong>活躍房間</strong>：永久保留，直到您手動刪除</li>
+                <li><strong>過期房間</strong>：建立超過 30 天且無活動的房間將自動刪除</li>
+                <li><strong>已刪除資料</strong>：無法復原</li>
+            </ul>
+            <hr>
+            <h2>5. 資料分享</h2>
+            <h3>5.1 與其他用戶分享</h3>
+            <p>當您邀請成員加入房間時，該房間的所有費用資料將對房間成員可見，包括：</p>
+            <ul>
+                <li>費用項目名稱、金額、幣別</li>
+                <li>付款人及分攤成員</li>
+                <li>結算結果</li>
+            </ul>
+            <h3>5.2 第三方服務</h3>
+            <p>我們使用以下第三方服務，它們可能會收集部分資訊：</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>服務</th>
+                        <th>用途</th>
+                        <th>隱私權政策</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Firebase Authentication</strong></td>
+                        <td>Google 登入</td>
+                        <td><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase 隱私權</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Firebase Firestore</strong></td>
+                        <td>資料儲存</td>
+                        <td><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase 隱私權</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Firebase Crashlytics</strong></td>
+                        <td>崩潰報告</td>
+                        <td><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase 隱私權</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Currency-API</strong></td>
+                        <td>匯率資料</td>
+                        <td><a href="https://github.com/fawazahmed0/currency-api" target="_blank">Currency-API</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <h2>6. 您的權利</h2>
+            <p>根據個人資料保護法（GDPR、台灣個資法等），您擁有以下權利：</p>
+            <h3>6.1 存取權</h3>
+            <p>您可隨時在應用程式內查看您的所有資料。</p>
+            <h3>6.2 修改權</h3>
+            <p>您可以在應用程式內編輯或刪除費用、房間等資料。</p>
+            <h3>6.3 刪除權（被遺忘權）</h3>
+            <p>您可以：</p>
+            <ul>
+                <li>在應用程式內刪除個別房間或費用</li>
+                <li>聯絡我們完全刪除您的帳號及所有相關資料</li>
+            </ul>
+            <p><strong>刪除帳號請求</strong>：請寄信至 <code>divvygo2026@gmail.com</code>，我們將在 30 天內處理。</p>
+            <h3>6.4 資料可攜權</h3>
+            <p>如需匯出您的資料，請聯絡我們，我們將提供 JSON 格式的資料副本。</p>
+            <hr>
+            <h2>7. 兒童隱私</h2>
+            <p>DivvyGo 不針對 13 歲以下兒童設計。我們不會故意收集未滿 13 歲兒童的個人資訊。</p>
+            <p>如果您發現您的孩子在未經同意的情況下向我們提供了個人資訊，請聯絡我們，我們將立即刪除相關資訊。</p>
+            <hr>
+            <h2>8. Cookie 與追蹤技術</h2>
+            <p>DivvyGo <strong>不使用</strong> Cookie 或廣告追蹤技術。</p>
+            <p>我們僅使用 Firebase 提供的基本分析功能（可選），不會追蹤您在其他應用程式或網站的行為。</p>
+            <hr>
+            <h2>9. 政策變更</h2>
+            <p>我們可能會不定期更新本隱私權政策。任何變更將：</p>
+            <ul>
+                <li>更新「最後更新日期」</li>
+                <li>在應用程式內通知您（重大變更）</li>
+                <li>於本頁面公告</li>
+            </ul>
+            <p>建議您定期查看本政策以了解最新資訊。</p>
+            <hr>
+            <h2>10. 聯絡我們</h2>
+            <p>如對本隱私權政策或資料處理有任何疑問，請透過以下方式聯絡我們：</p>
+            <ul>
+                <li><strong>開發者</strong>：DivvyGo Team</li>
+                <li><strong>電子郵件</strong>：<code>divvygo2026@gmail.com</code></li>
+                <li><strong>回應時間</strong>：1-3 個工作天</li>
+            </ul>
+            <hr>
+            <h2>11. 管轄法律</h2>
+            <p>本隱私權政策受<strong>中華民國（台灣）</strong>法律管轄。</p>
+            <p>若您位於歐盟，我們也遵守 GDPR（一般資料保護規範）的相關規定。</p>
+            <hr>
+            <p style="text-align: center; margin-top: 50px; font-size: 1.3em;">
+                <strong>感謝您信任 DivvyGo！</strong> 🎉
+            </p>
+            <p style="text-align: center; color: #666;">
+                我們承諾保護您的隱私，讓您放心使用我們的分帳服務。
+            </p>
+        </div>
+        <div id="privacy-en" class="privacy-section">
+            <h2>1. Introduction</h2>
+            <p>Welcome to <strong>DivvyGo</strong>!</p>
+            <p>DivvyGo (hereinafter referred to as "the App") is committed to protecting your privacy. This Privacy
+                Policy explains how we collect, use, store, and protect your personal information.</p>
+            <p>By using the App, you agree to the information handling practices described in this policy.</p>
+            <hr>
+            <h2>2. Information We Collect</h2>
+            <h3>2.1 Information You Provide</h3>
+            <ul>
+                <li><strong>Google Account Information</strong>: When you sign in with Google, we collect your name,
+                    email address, and profile photo.</li>
+                <li><strong>Room & Expense Data</strong>: Room names, member names, expense items, amounts, split
+                    settings, etc., that you create.</li>
+            </ul>
+            <h3>2.2 Automatically Collected Information</h3>
+            <ul>
+                <li><strong>Device Information</strong>: Operating system version, device model (for error tracking).
+                </li>
+                <li><strong>Usage Data</strong>: App crash reports and performance metrics (via Firebase Crashlytics).
+                </li>
+            </ul>
+            <h3>2.3 Information We Do NOT Collect</h3>
+            <ul>
+                <li>❌ Your location data</li>
+                <li>❌ Your contacts</li>
+                <li>❌ Your photos or files</li>
+                <li>❌ Device identifiers for tracking purposes</li>
+            </ul>
+            <hr>
+            <h2>3. How We Use Your Information</h2>
+            <p>We use collected information to:</p>
+            <ul>
+                <li>✅ Provide bill splitting and settlement features</li>
+                <li>✅ Sync your data across multiple devices</li>
+                <li>✅ Improve app performance and stability</li>
+                <li>✅ Provide customer support</li>
+                <li>✅ Display your profile (name, photo) in room member lists</li>
+            </ul>
+            <div class="highlight">
+                <strong>We will NEVER</strong>:
+                <ul style="margin-top: 10px;">
+                    <li>❌ Sell your data to third parties</li>
+                    <li>❌ Use your data for advertising</li>
+                    <li>❌ Share your private room information with other users</li>
+                </ul>
+            </div>
+            <hr>
+            <h2>4. Data Storage & Security</h2>
+            <h3>4.1 Storage Location</h3>
+            <p>Your data is stored in <strong>Google Firebase Firestore</strong>, with servers located in:</p>
+            <ul>
+                <li>Primary region: United States (us-central1)</li>
+                <li>Data is encrypted in transit (HTTPS) and at rest</li>
+            </ul>
+            <h3>4.2 Security Measures</h3>
+            <ul>
+                <li>🔒 All data transfers use SSL/TLS encryption</li>
+                <li>🔐 Only you and invited room members can access room data</li>
+                <li>🛡️ Firebase Security Rules enforce access control</li>
+            </ul>
+            <h3>4.3 Data Retention</h3>
+            <ul>
+                <li><strong>Active Rooms</strong>: Retained indefinitely until you manually delete them</li>
+                <li><strong>Expired Rooms</strong>: Rooms created over 30 days ago with no activity are auto-deleted
+                </li>
+                <li><strong>Deleted Data</strong>: Cannot be recovered</li>
+            </ul>
+            <hr>
+            <h2>5. Data Sharing</h2>
+            <h3>5.1 Sharing with Other Users</h3>
+            <p>When you invite members to a room, all expense data in that room becomes visible to members, including:
+            </p>
+            <ul>
+                <li>Expense item names, amounts, currencies</li>
+                <li>Payers and split participants</li>
+                <li>Settlement results</li>
+            </ul>
+            <h3>5.2 Third-Party Services</h3>
+            <p>We use the following third-party services, which may collect some information:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Purpose</th>
+                        <th>Privacy Policy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Firebase Authentication</strong></td>
+                        <td>Google Sign-In</td>
+                        <td><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Firebase Firestore</strong></td>
+                        <td>Data Storage</td>
+                        <td><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Firebase Crashlytics</strong></td>
+                        <td>Crash Reporting</td>
+                        <td><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Currency-API</strong></td>
+                        <td>Exchange Rate Data</td>
+                        <td><a href="https://github.com/fawazahmed0/currency-api" target="_blank">Currency-API</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <h2>6. Your Rights</h2>
+            <p>Under data protection laws (GDPR, Taiwan Personal Data Protection Act, etc.), you have the following
+                rights:</p>
+            <h3>6.1 Right to Access</h3>
+            <p>You can view all your data within the app at any time.</p>
+            <h3>6.2 Right to Rectification</h3>
+            <p>You can edit or delete expenses, rooms, and other data within the app.</p>
+            <h3>6.3 Right to Erasure (Right to be Forgotten)</h3>
+            <p>You can:</p>
+            <ul>
+                <li>Delete individual rooms or expenses within the app</li>
+                <li>Contact us to completely delete your account and all associated data</li>
+            </ul>
+            <p><strong>Account Deletion Request</strong>: Email us at <code>divvygo2026@gmail.com</code>, and we will
+                process it within 30 days.</p>
+            <h3>6.4 Right to Data Portability</h3>
+            <p>To export your data, contact us, and we will provide a copy in JSON format.</p>
+            <hr>
+            <h2>7. Children's Privacy</h2>
+            <p>DivvyGo is not designed for children under 13. We do not knowingly collect personal information from
+                children under 13.</p>
+            <p>If you discover that your child has provided us with personal information without consent, please contact
+                us, and we will delete it immediately.</p>
+            <hr>
+            <h2>8. Cookies & Tracking</h2>
+            <p>DivvyGo <strong>does NOT use</strong> cookies or advertising trackers.</p>
+            <p>We only use basic analytics provided by Firebase (optional) and do not track your behavior on other apps
+                or websites.</p>
+            <hr>
+            <h2>9. Policy Changes</h2>
+            <p>We may update this Privacy Policy from time to time. Any changes will:</p>
+            <ul>
+                <li>Update the "Last Updated" date</li>
+                <li>Notify you within the app (for significant changes)</li>
+                <li>Be announced on this page</li>
+            </ul>
+            <p>We recommend reviewing this policy regularly to stay informed.</p>
+            <hr>
+            <h2>10. Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy or our data practices, contact us:</p>
+            <ul>
+                <li><strong>Developer</strong>: DivvyGo Team</li>
+                <li><strong>Email</strong>: <code>divvygo2026@gmail.com</code></li>
+                <li><strong>Response Time</strong>: 1-3 business days</li>
+            </ul>
+            <hr>
+            <h2>11. Governing Law</h2>
+            <p>This Privacy Policy is governed by the laws of the <strong>Republic of China (Taiwan)</strong>.</p>
+            <p>If you are located in the EU, we also comply with GDPR (General Data Protection Regulation).</p>
+            <hr>
+            <p style="text-align: center; margin-top: 50px; font-size: 1.3em;">
+                <strong>Thank you for trusting DivvyGo!</strong> 🎉
+            </p>
+            <p style="text-align: center; color: #666;">
+                We are committed to protecting your privacy and ensuring you can use our bill-splitting service with
+                confidence.
+            </p>
+        </div>
+    </div>
+    <script>
+        function switchLanguage(lang) {
+            // Hide all sections
+            document.querySelectorAll('.privacy-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            // Remove active class from all buttons
+            document.querySelectorAll('.language-toggle button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            // Show selected section and activate button
+            document.getElementById('privacy-' + lang).classList.add('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+        }
+    </script>
+</body>
+</html>
